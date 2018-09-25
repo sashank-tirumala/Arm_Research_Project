@@ -1,0 +1,13 @@
+<launch>
+   <param name="robot_description" textfile="$(find common_sensors)/urdf/sample_robots/kinectv2.urdf" />
+   <node name="robot_state_publisher" type="robot_state_publisher" pkg="robot_state_publisher" />
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+     <arg name ="paused" value = "false" />
+     <arg name ="headless" value = "false" />
+     <arg name ="gui" value = "true" />
+     <arg name ="use_sim_time" value = "true" />
+     <arg name ="debug" value = "false" />
+     <arg name ="verbose" value= "false" />
+   </include>
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model TestKinect" />
+</launch>
