@@ -1,0 +1,1 @@
+controller_joint_names: [simple_arm_shoulder_pan_joint, simple_arm_shoulder_lift_joint, simple_arm_elbow_joint, simple_arm_wrist_1_joint, simple_arm_wrist_2_joint, simple_arm_wrist_3_joint, simple_gripper_robotiq_85_left_knuckle_joint ]
